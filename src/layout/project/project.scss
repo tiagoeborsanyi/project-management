@@ -1,9 +1,10 @@
 .section-project,
-.section-members {
+.section-members,
+.section-files {
   padding: 1.5rem;
 
   &:not(:last-child) {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -24,6 +25,12 @@
     background-color: $color-white;
     font-size: $font-text-small-2;
     font-weight: 900;
+    outline: none;
+
+    & > span {
+      vertical-align: middle;
+      font-size: inherit;
+    }
 
     &:hover {
       cursor: pointer;

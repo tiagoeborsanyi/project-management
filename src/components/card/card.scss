@@ -33,6 +33,16 @@
     justify-content: flex-start;
     align-items: center;
 
+    &-day {
+      height: 100%;
+      margin-right: 2rem;
+
+      & > p {
+        color: $color-black;
+        font-weight: 700;
+      }
+    }
+
     &-folder {
       font-size: 6rem;
       margin-right: 0.9rem;
@@ -55,7 +65,8 @@
       color: $color-grey-dark-2;
     }
 
-    &-subtitle {
+    &-subtitle,
+    &-clock {
       color: $color-grey-dark-2;
       font-size: $font-subtitle-card;
       font-weight: 700;

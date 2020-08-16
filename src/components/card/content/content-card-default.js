@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const COntentCardDefault = props => {
-  return (
+const COntentCardDefault = props => (
     <div>
       <div className='row geral'>
         <div className='geral__column1'>
@@ -24,6 +23,5 @@ const COntentCardDefault = props => {
 
     </div>
   )
-}
 
 export default COntentCardDefault
