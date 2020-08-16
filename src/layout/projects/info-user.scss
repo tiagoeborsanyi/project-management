@@ -1,0 +1,18 @@
+.info-user {
+  color: $color-grey-dark-2;
+  font-weight: 600;
+
+  &__name {
+    font-size: $font-text-small;
+  }
+
+  &__hello {
+    font-size: $font-title;
+    color: $color-black;
+    font-weight: 900;
+  }
+
+  &__date {
+    font-size: $font-text-small-2;
+  }
+}

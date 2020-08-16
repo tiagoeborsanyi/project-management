@@ -4,7 +4,13 @@
 @import "./base/typography.scss";
 @import "./base/utilities.scss";
 
+@import "./components/card/card.scss";
+
 @import "./layout/header/header.scss";
 @import "./layout/project/project.scss";
+
 @import "./layout/projects/projects.scss";
+@import "./layout/projects/info-user.scss";
+@import "./layout/projects/menu.scss";
+
 @import "./layout/footer/footer.scss";
