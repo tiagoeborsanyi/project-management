@@ -1,8 +1,94 @@
 .card {
-  height: 15rem;
+  height: auto;
   width: 100%;
   padding: 1.5rem;
   border: 1px solid rgba($color-black, .1);
   border-radius: 6px;
   box-shadow: .5rem 1rem 1.2rem -.6rem rgba($color-black, .15);
 }
+
+.row {
+  height: 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.geral {
+
+  &__column1 {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    &-folder {
+      font-size: 6rem;
+      margin-right: 0.9rem;
+    }
+
+    &-title {
+      margin: 0;
+      font-size: $font-title-card;
+      font-weight: 900;
+      color: $color-grey-dark-3;
+    }
+
+    &-subtitle {
+      color: $color-grey-dark-2;
+      font-size: $font-subtitle-card;
+      font-weight: 700;
+    }
+  }
+
+  &__column2 {
+
+    &-button {
+      border: none;
+      background-color: $color-white;
+    }
+  }
+}
+
+.geral__column1-folder.green {
+  color: $color-folder-green;
+}
+.geral__column1-folder.yellow {
+  color: $color-folder-yellow;
+}
+.geral__column1-folder.red {
+  color: $color-folder-red;
+}
+
+.progress {
+  height: 3px;
+  width: 100%;
+  margin: 2rem 0;
+  background-color: $color-grey-dark-4;
+  border-radius: 20px;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    height: 3px;
+    width: 20%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  &__subtitle {
+    color: $color-grey-dark-2;
+    font-size: $font-subtitle-card;
+    font-weight: 700;
+  }
+}
+
+.progress::after > .green {
+  background-color: $color-folder-green;
+}
+
+

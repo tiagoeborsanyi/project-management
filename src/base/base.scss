@@ -2,7 +2,7 @@
 *::after,
 *::before {
   max-width: 415px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
@@ -21,9 +21,13 @@ body {
 }
 
 @media (min-height: 80rem) {
+  html {
+    margin: auto;
+  }
   body {
     height: 85rem;
     margin-top: 3rem;
+
     border: 1px solid rgba($color-black, .1);
   }
 }

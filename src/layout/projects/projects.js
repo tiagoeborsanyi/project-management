@@ -1,7 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+import dataProjects from '../../fake-data/data-projects'
 import Card from '../../components/card/card'
+import ContentCardDefault from '../../components/card/content/content-card-default'
 
 const Projects = props => {
   return (
@@ -25,7 +27,11 @@ const Projects = props => {
       </section>
 
       <section className='section-card'>
-        <Card>content</Card>
+        {dataProjects.map(data => (
+          <Card key={data.id}>
+            <ContentCardDefault data={data} />
+          </Card>
+        ))}
       </section>
     </React.Fragment>
   )
