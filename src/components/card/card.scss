@@ -5,6 +5,16 @@
   border: 1px solid rgba($color-black, .1);
   border-radius: 6px;
   box-shadow: .5rem 1rem 1.2rem -.6rem rgba($color-black, .15);
+  transition: all .2s;
+
+  &:not(:first-child) {
+    margin: 2rem 0;
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: .5rem 1rem 1.2rem -.2rem rgba($color-black, .15);
+  }
 }
 
 .row {
@@ -35,6 +45,11 @@
       color: $color-grey-dark-3;
     }
 
+    &-title:hover {
+      cursor: pointer;
+      color: $color-grey-dark-2;
+    }
+
     &-subtitle {
       color: $color-grey-dark-2;
       font-size: $font-subtitle-card;
@@ -47,25 +62,30 @@
     &-button {
       border: none;
       background-color: $color-white;
+
+      &--icon:hover {
+        cursor: pointer;
+      }
     }
   }
 }
 
-.geral__column1-folder.green {
+.geral__column1-folder.green,
+.geral__column2-button--icon.green {
   color: $color-folder-green;
 }
-.geral__column1-folder.yellow {
+.geral__column1-folder.yellow,
+.geral__column2-button--icon.yellow {
   color: $color-folder-yellow;
 }
-.geral__column1-folder.red {
+.geral__column1-folder.red,
+.geral__column2-button--icon.red {
   color: $color-folder-red;
 }
 
 .progress {
   height: 3px;
-  width: 100%;
-  margin: 2rem 0;
-  background-color: $color-grey-dark-4;
+  margin: 2rem 0 1rem 0;
   border-radius: 20px;
   position: relative;
 
@@ -75,9 +95,12 @@
     left: 0;
     content: '';
     height: 3px;
-    width: 20%;
+    width: calc(100vw - 7rem);
+    display: inline-block;
+    background-color: $color-grey-dark-4;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    z-index: -10;
   }
 
   &__subtitle {
@@ -87,8 +110,18 @@
   }
 }
 
-.progress::after > .green {
+.progress.green {
   background-color: $color-folder-green;
 }
+.progress.yellow {
+  background-color: $color-folder-yellow;
+}
+.progress.red {
+  background-color: $color-folder-red;
+}
 
-
+@media (min-height: 80rem) {
+  .progress::after {
+    width: calc(100vw - 71rem);
+  }
+}

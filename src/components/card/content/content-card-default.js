@@ -12,13 +12,13 @@ const COntentCardDefault = props => {
           </div>
         </div>
         <div className='geral__column2'>
-          <button className='geral__column2-button'><span className="material-icons geral__column2-button--icon">more_vert</span></button>
+          <button className='geral__column2-button'><span className={`material-icons geral__column2-button--icon ${props.data.cor}`}>more_vert</span></button>
         </div>
       </div>
-      <div className={`progress ${props.data.cor}`}></div>
-      {props.data.progress === 100 ?
+      <div className={`progress ${props.data.cor}`} style={{width: `${props.data.progress}%`}}></div>
+      {props.data.progress === '100' ?
         <p className='progress__subtitle'>Complete - 100% Done</p> :
-        <p className='progress__subtitle'>On progress - 20% Done</p>
+        <p className='progress__subtitle'>On progress - {props.data.progress}% Done</p>
       }
 
     </div>

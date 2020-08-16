@@ -20,6 +20,10 @@ body {
   margin: 0 auto;
 }
 
+main {
+  position: relative;
+}
+
 @media (min-height: 80rem) {
   html {
     margin: auto;

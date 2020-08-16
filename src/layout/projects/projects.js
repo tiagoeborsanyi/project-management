@@ -33,6 +33,12 @@ const Projects = props => {
           </Card>
         ))}
       </section>
+
+      <section className='section-float-button'>
+        <div className='float-button'>
+          <button className='float-button__button'>+</button>
+        </div>
+      </section>
     </React.Fragment>
   )
 }
