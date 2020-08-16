@@ -1,0 +1,58 @@
+.section-project,
+.section-members {
+  padding: 1.5rem;
+
+  &:not(:last-child) {
+    margin-top: 2rem;
+  }
+}
+
+.members__title {
+  height: 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &-text {
+    font-size: $font-title;
+    color: $color-black;
+    font-weight: 700;
+  }
+
+  &-button {
+    border: none;
+    background-color: $color-white;
+    font-size: $font-text-small-2;
+    font-weight: 900;
+
+    &:hover {
+      cursor: pointer;
+      color: $color-grey-dark-2;
+    }
+  }
+}
+
+.members-persons {
+  margin-top: 1.5rem;
+
+  &-items {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &-item {
+    height: 7rem;
+    width: 19%;
+    text-align: center;
+
+    & > img {
+      height: 80%;
+      width: 70%;
+      border-radius: 7px;
+    }
+  }
+}

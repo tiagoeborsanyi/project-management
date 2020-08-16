@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const COntentCardDefault = props => {
   return (
@@ -7,7 +8,7 @@ const COntentCardDefault = props => {
         <div className='geral__column1'>
           <span className={`material-icons geral__column1-folder ${props.data.cor}`}>folder</span>
           <div>
-            <h2 className='geral__column1-title'>{props.data.title}</h2>
+            <h2 className='geral__column1-title'><Link to={`/project/${props.data.id}`}>{props.data.title}</Link></h2>
             <p className='geral__column1-subtitle'>{props.data.subtitle}</p>
           </div>
         </div>

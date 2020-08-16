@@ -45,6 +45,11 @@
       color: $color-grey-dark-3;
     }
 
+    &-title > a {
+      text-decoration: none;
+      color: inherit;
+    }
+
     &-title:hover {
       cursor: pointer;
       color: $color-grey-dark-2;
