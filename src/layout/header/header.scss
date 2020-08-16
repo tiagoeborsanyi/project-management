@@ -1,0 +1,18 @@
+.header {
+  height: 6rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__menu,
+  &__avatar {
+    height: 70%;
+    margin: 0;
+  }
+
+  &__avatar {
+    height: 100%;
+    border-radius: 5px;
+  }
+}

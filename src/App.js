@@ -1,12 +1,15 @@
 import React from 'react';
 
+import Header from './layout/header/header';
+import Projects from './layout/projects/projects';
 import Footer from './layout/footer/footer';
 
 function App() {
   return (
     <React.Fragment>
+      <Header />
       <main>
-        <h1>init project</h1>
+        <Projects />
       </main>
       <footer className='footer'>
         <Footer />
