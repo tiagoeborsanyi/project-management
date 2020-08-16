@@ -1,10 +1,57 @@
 .footer {
   height: 6.5rem;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $color-white;
   background-color: orange;
   font-size: $default-font-size;
   position: fixed;
   bottom: 0;
+
+  &__col {
+    display: inherit;
+    margin-left: 1.5rem;
+    background-color: #d38a04;
+    padding: 0.8rem 2.6rem;
+    border-radius: 20px;
+
+    &:hover {
+      color: $color-grey-dark-5;
+    }
+  }
+
+  &__items {
+    list-style: none;
+    display: inherit;
+    padding: 0;
+    margin-right: 1.5rem;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+
+    &:hover {
+      color: $color-grey-dark-5;
+    }
+  }
+
+  &__icon {
+    font-size: 2.5rem;
+  }
+
+  &__text {
+    margin-left: 0.8rem;
+    font-size: $font-text-small-2;
+  }
+
+  &__col:hover,
+  &__item {
+    cursor: pointer;
+  }
 }
 
 @media (min-height: 80rem) {
