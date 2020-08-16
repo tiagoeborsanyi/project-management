@@ -23,6 +23,7 @@
     &:hover {
       transform: translateY(-2px);
       box-shadow: .5rem 1rem 1.2rem -.6rem rgba($color-black, .35);
+
     }
 
     &:active {
@@ -39,7 +40,10 @@
       color: $color-black;
       font-weight: 700;
     }
+  }
 
-
+  &__item:hover > &__btn {
+    color: $color-black;
+    font-weight: 700;
   }
 }

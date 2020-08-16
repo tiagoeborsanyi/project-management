@@ -9,6 +9,13 @@
 }
 
 .section-card {
-  height: auto;
+  height: 43rem;
   margin-top: 2rem;
+  overflow: auto;
+}
+
+@media (min-height: 80rem) {
+  .section-card {
+    height: 47rem;
+  }
 }

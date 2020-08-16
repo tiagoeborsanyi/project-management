@@ -19,3 +19,11 @@ body {
   display: block;
   margin: 0 auto;
 }
+
+@media (min-height: 80rem) {
+  body {
+    height: 85rem;
+    margin-top: 3rem;
+    border: 1px solid rgba($color-black, .1);
+  }
+}

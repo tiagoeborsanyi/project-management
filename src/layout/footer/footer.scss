@@ -6,3 +6,9 @@
   position: fixed;
   bottom: 0;
 }
+
+@media (min-height: 80rem) {
+  .footer {
+    position: absolute;
+  }
+}
