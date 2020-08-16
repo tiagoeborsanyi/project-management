@@ -1,11 +1,17 @@
 import React from 'react';
-import './App.css';
+
+import Footer from './layout/footer/footer';
 
 function App() {
   return (
-    <div className="App">
-      <h1>init project</h1>
-    </div>
+    <React.Fragment>
+      <main>
+        <h1>init project</h1>
+      </main>
+      <footer className='footer'>
+        <Footer />
+      </footer>
+    </React.Fragment>
   );
 }
 

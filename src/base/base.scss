@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  max-width: 415px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  height: 100vh;
+  max-width: 415px;
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+}
