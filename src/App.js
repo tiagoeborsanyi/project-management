@@ -6,6 +6,7 @@ import Header from './layout/header/header';
 import Projects from './layout/projects/projects';
 import Project from './layout/project/project';
 import Footer from './layout/footer/footer';
+import Modal from './components/modal/modal';
 
 const routes = (
   <Switch>
@@ -18,6 +19,9 @@ const routes = (
 function App() {
   return (
     <Router>
+      <Modal>
+        <p>Conteudo da modal</p>
+      </Modal>
       <Header />
       <main>
         {routes}

@@ -1,0 +1,26 @@
+.modal {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: rgba($color-black, .8);
+
+  &__content {
+    @include absCenter;
+    height: 50rem;
+    width: 80%;
+    box-shadow: 0 2rem 4rem rgba($color-black, .2);
+    background-color: $color-white;
+    border-radius: 3px;
+    display: block;
+    overflow: hidden;
+  }
+}
+
+@media (min-height: 80rem) {
+  .modal {
+    position: absolute;
+  }
+}
