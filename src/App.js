@@ -7,20 +7,22 @@ import Projects from './layout/projects/projects';
 import Project from './layout/project/project';
 import Footer from './layout/footer/footer';
 import Modal from './components/modal/modal';
-
-const routes = (
-  <Switch>
-    <Route path='/' exact component={Projects} />
-    <Route path='/project/:id' component={Project} />
-    <Redirect to='/' />
-  </Switch>
-)
+import Form from './components/form/form';
 
 function App() {
+
+  const routes = (
+    <Switch>
+      <Route path='/' exact component={Projects} />
+      <Route path='/project/:id' component={Project} />
+      <Redirect to='/' />
+    </Switch>
+  )
+
   return (
     <Router>
       <Modal>
-        <p>Conteudo da modal</p>
+        <Form />
       </Modal>
       <Header />
       <main>
