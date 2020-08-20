@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import dataProjects from '../../fake-data/data-projects'
 import Card from '../../components/card/card'
 import ContentCardDefault from '../../components/card/content/content-card-default'
-import FloatButton from '../../components/float-button/float-button'
 
 const Projects = props => {
   return (
@@ -34,8 +33,6 @@ const Projects = props => {
           </Card>
         ))}
       </section>
-
-      <FloatButton />
 
     </React.Fragment>
   )

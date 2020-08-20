@@ -4,7 +4,6 @@ import data from '../../fake-data/data-projects'
 import Card from '../../components/card/card'
 import ContentCardDefault from '../../components/card/content/content-card-default'
 import ContentCardInfo from '../../components/card/content/content-card-info'
-import FloatButton from '../../components/float-button/float-button'
 
 const Project = props => {
   return (
@@ -45,7 +44,6 @@ const Project = props => {
           </Card>
       </section>
 
-      <FloatButton />
     </React.Fragment>
   )
 }

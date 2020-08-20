@@ -5,7 +5,8 @@
   top: 0;
   left: 0;
   z-index: 100;
-  background-color: rgba($color-black, .8);
+  background-image: linear-gradient(rgba($color-black, .75), rgba($color-black, .9));
+  transition: all 1s;
 
   &__content {
     @include absCenter;
@@ -17,6 +18,12 @@
     display: block;
     overflow: hidden;
   }
+}
+
+.visibility {
+  transform: translate(100rem, -50%) scale(.2);
+  opacity: 0;
+  visibility: hidden;
 }
 
 @media (min-height: 80rem) {
