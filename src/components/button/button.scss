@@ -1,0 +1,17 @@
+.btn {
+  font-size: 1.5rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  background-color: rgb(247, 176, 45);
+  box-shadow: 0 1rem 2rem rgba($color-black, .2);
+  transition: all .3s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(248, 169, 23);
+    transform: translateY(-1px);
+    box-shadow: 0 1rem 2rem rgba($color-black, .4);
+  }
+}
